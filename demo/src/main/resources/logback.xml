@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration
+	xmlns="http://ch.qos.logback/xml/ns/logback"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback
+	https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
+	
+	<property name="log_path" value="/data/logs/canyin-service"/>
+
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %thread %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">  
+      		<level>DEBUG</level>
+    	</filter>
+	</appender>
+	
+	<appender name="debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 配置滚动的策略 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 日志名称的格式 -->
+            <fileNamePattern>${log_path}/%d{yyyy-MM-dd}/debug-%i.log</fileNamePattern>
+            <!-- 大小 -->
+            <maxFileSize>5MB</maxFileSize>
+            <!-- 保存的最长时间：天数 -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %thread %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">  
+      		<level>DEBUG</level>
+    	</filter> 
+    </appender>
+
+	<logger name="com.lei" level="DEBUG"></logger>
+	<root level="WARN">
+		<appender-ref ref="console" />
+		<appender-ref ref="debug" />
+	</root>
+	
+</configuration>

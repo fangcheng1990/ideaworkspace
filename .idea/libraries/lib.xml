@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/alicom-mns-receive-sdk-0.0.1-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/aliyun-java-sdk-core-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/aliyun-java-sdk-dybaseapi-1.0.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/aliyun-java-sdk-core-3.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/aliyun-sdk-mns-1.1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/alipay-sdk-java20171027120314.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../资料/YYDeament-88ybg-master/88ybg/quanmin_admin/ybg_base_jar/src/main/resources/lib/aliyun-java-sdk-dysmsapi-1.0.0-SANPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
